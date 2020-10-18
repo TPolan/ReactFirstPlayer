@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45502ef0-e610-4b3a-a5b8-abfc46be7c8f" name="Default Changelist" comment="add AddPlayerForm.js">
+    <list default="true" id="45502ef0-e610-4b3a-a5b8-abfc46be7c8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/FirstPlayerPresenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddPlayerForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlayerForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlayerCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlayerCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlayerPool.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlayerPool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AddPlayerContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AddPlayerContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
       <workItem from="1602850980190" duration="3140000" />
       <workItem from="1603009991351" duration="1125000" />
       <workItem from="1603012125327" duration="11735000" />
-      <workItem from="1603029143802" duration="4837000" />
+      <workItem from="1603029143802" duration="6500000" />
     </task>
     <task id="LOCAL-00001" summary="add context, PlayerCard.js, PlayerPool.js">
       <created>1603031609649</created>
@@ -81,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603031609649</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add AddPlayerForm.js">
+      <created>1603035046238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603035046238</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,22 +130,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="add AddPlayerForm.js" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603032252894">
+    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603035756432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603032252894" />
+    <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603035756432" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603021771123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603021771123" />
-    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603035027635">
+    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603035045662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603035027635" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1603032362469">
+    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603035045662" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603035758143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603032362469" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603035758143" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1603029351981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

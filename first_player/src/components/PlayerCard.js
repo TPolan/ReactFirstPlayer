@@ -1,7 +1,7 @@
 import React from "react";
-import {Button, Card, Typography, CardContent, CardActions} from "@material-ui/core";
+import {Button, Card, CardActions, CardContent, Typography} from "@material-ui/core";
 
-const playerCard = (props) => {
+const PlayerCard = (props) => {
     return(
         <Card key={props.index}>
             <CardContent>
@@ -15,4 +15,4 @@ const playerCard = (props) => {
         </Card>
     )
 }
-export default playerCard;
+export default PlayerCard;

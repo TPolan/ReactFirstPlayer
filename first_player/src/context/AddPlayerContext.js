@@ -1,10 +1,8 @@
 import React, {useState} from "react";
-import {Grid} from "@material-ui/core";
-import PlayerCard from "../components/PlayerCard";
 
 const PlayerContext = React.createContext();
 
-const addPlayerContextProvider = (props) => {
+const AddPlayerContextProvider = (props) => {
 
     const [playersArr, setPlayersArr] = useState(['Urban', 'Pepa', 'Nifty', 'Jirka']);
     const [playerInput, setPlayerInput] = useState('');
@@ -12,27 +10,13 @@ const addPlayerContextProvider = (props) => {
         setPlayerInput(event.target.value)
     };
     const handleAddPlayer = () => setPlayersArr(prevPlayers => [...prevPlayers, playerInput]);
-    const handleRemovePlayer = (key) => {
+    const handleRemovePlayer = key => {
         setPlayersArr((prevState => {
             const prevArr = [...prevState];
             const updatedArr = prevArr.filter((_, index) => index !== key);
             return [...updatedArr]
         }))
     }
-    const mappedPlayersArr = playersArr.map(
-        (player, index) => {
-            return (
-                <Grid item>
-                    <PlayerCard
-                        name={player}
-                        remove={handleRemovePlayer}
-                        key={index}
-                        index={index}
-                    />
-                </Grid>
-            )
-        }
-    )
 
     return (
         <PlayerContext.Provider value={{
@@ -49,4 +33,4 @@ const addPlayerContextProvider = (props) => {
     )
 }
 
-export {addPlayerContextProvider as AddPlayerContextProvider, PlayerContext};
+export {AddPlayerContextProvider, PlayerContext};

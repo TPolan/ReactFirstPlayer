@@ -1,10 +1,10 @@
 import React, {useContext} from 'react';
-import {Button, FormControl, FormHelperText, Grid, Input, InputLabel} from "@material-ui/core";
+import {Button, FormControl, FormHelperText, Input, InputLabel} from "@material-ui/core";
 import {PlayerContext} from "../context/AddPlayerContext";
 
-const addPlayerForm = (props) => {
+const AddPlayerForm = (props) => {
 
-const {handleChange, playerInput, handleAddPlayer} = useContext(PlayerContext);
+    const {handleChange, playerInput, handleAddPlayer} = useContext(PlayerContext);
 
     return (
         <>
@@ -24,4 +24,4 @@ const {handleChange, playerInput, handleAddPlayer} = useContext(PlayerContext);
     )
 }
 
-export default addPlayerForm;
+export default AddPlayerForm;

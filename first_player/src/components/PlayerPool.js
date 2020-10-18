@@ -1,11 +1,11 @@
 import React, {useContext} from "react";
 import {Grid} from "@material-ui/core";
 import PlayerCard from "./PlayerCard";
-import AddPlayerContext from '../context/AddPlayerContext';
+import {PlayerContext} from '../context/AddPlayerContext';
 
-const playerPool = (props) => {
+const PlayerPool = (props) => {
 
-    const {playersArr,handleRemovePlayer} = useContext(AddPlayerContext)
+    const {playersArr, handleRemovePlayer} = useContext(PlayerContext)
 
     const mappedPlayersArr = playersArr.map(
         (player, index) => {
@@ -21,11 +21,11 @@ const playerPool = (props) => {
             )
         }
     )
-    return  (
+    return (
         <Grid container justify={"center"} spacing={1}>
             {mappedPlayersArr}
         </Grid>
-        )
+    )
 }
-export default playerPool;
+export default PlayerPool;
 

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import AddPlayerContext from './context/AddPlayerContext';
+import {AddPlayerContextProvider} from './context/AddPlayerContext';
 
 ReactDOM.render(
     <React.StrictMode>
-        <AddPlayerContext>
+        <AddPlayerContextProvider>
             <App/>
-        </AddPlayerContext>
+        </AddPlayerContextProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );

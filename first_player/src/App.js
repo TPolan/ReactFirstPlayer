@@ -4,6 +4,7 @@ import 'fontsource-roboto';
 import {Grid, Typography} from '@material-ui/core';
 import PlayerPool from './components/PlayerPool';
 import AddPlayerForm from "./components/AddPlayerForm";
+import FirstPlayerPresenter from "./components/FirstPlayerPresenter";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     </Typography>
                     <AddPlayerForm/>
                     <PlayerPool/>
+                    <FirstPlayerPresenter/>
                 </Grid>
             </header>
         </div>

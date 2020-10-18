@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45502ef0-e610-4b3a-a5b8-abfc46be7c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FirstPlayerDialog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FirstPlayerDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPlayerDialog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FirstPlayerPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPlayerPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlayerCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlayerCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <workItem from="1602850980190" duration="3140000" />
       <workItem from="1603009991351" duration="1125000" />
       <workItem from="1603012125327" duration="11735000" />
-      <workItem from="1603029143802" duration="8114000" />
+      <workItem from="1603029143802" duration="11949000" />
     </task>
     <task id="LOCAL-00001" summary="add context, PlayerCard.js, PlayerPool.js">
       <created>1603031609649</created>
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603036812575</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add FirstPlayerDialog.js">
+      <created>1603038353282</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603038353282</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +147,8 @@
     <MESSAGE value="add AddPlayerForm.js" />
     <MESSAGE value="add FirstPlayerPresenter.js" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="add FirstPlayerDialog.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FirstPlayerDialog.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603035756432">
@@ -151,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603021771123" />
-    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603036811886">
+    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603038352654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603036811886" />
+    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603038352654" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1603036774647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

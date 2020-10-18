@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 const PlayerContext = React.createContext();
 
-const AddPlayerContextProvider = (props) => {
+const AddPlayerContextProvider = props => {
 
     const [playersArr, setPlayersArr] = useState(['Urban', 'Pepa', 'Nifty', 'Jirka']);
     const [playerInput, setPlayerInput] = useState('');

@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {Button, FormControl, FormHelperText, Input, InputLabel} from "@material-ui/core";
 import {PlayerContext} from "../context/AddPlayerContext";
 
-const AddPlayerForm = (props) => {
+const AddPlayerForm = props => {
 
     const {handleChange, playerInput, handleAddPlayer} = useContext(PlayerContext);
 

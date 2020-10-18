@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Card, CardActions, CardContent, Typography} from "@material-ui/core";
 
-const PlayerCard = (props) => {
+const PlayerCard = props => {
     return(
         <Card key={props.index}>
             <CardContent>

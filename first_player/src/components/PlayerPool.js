@@ -3,7 +3,7 @@ import {Grid} from "@material-ui/core";
 import PlayerCard from "./PlayerCard";
 import {PlayerContext} from '../context/AddPlayerContext';
 
-const PlayerPool = (props) => {
+const PlayerPool = props => {
 
     const {playersArr, handleRemovePlayer} = useContext(PlayerContext)
 

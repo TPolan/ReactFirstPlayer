@@ -8,13 +8,17 @@ const AddPlayerForm = props => {
 
     return (
         <Grid container direction={"row-reverse"} justify={"center"} alignItems={"center"}>
-            <FormControl color={"secondary"}>
+            <FormControl color={"primary"}>
                 <InputLabel htmlFor="my-input">Player Name</InputLabel>
                 <Input onChange={handleChange} value={playerInput} id="my-input"
                        aria-describedby="my-helper-text"/>
                 <FormHelperText id="my-helper-text">Add new players to the player pool</FormHelperText>
             </FormControl>
             <Button
+                style={{
+                    padding: 6,
+                    margin: 8
+                }}
                 onClick={handleAddPlayer}
                 variant="contained"
                 color="primary">

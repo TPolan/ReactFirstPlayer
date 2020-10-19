@@ -1,23 +1,19 @@
 import React from 'react';
-import {Button, Dialog, DialogActions, DialogContent, DialogTitle, Typography} from "@material-ui/core";
+import {CircularProgress, Dialog, DialogContent, DialogTitle, Grid} from "@material-ui/core";
 
 const FirstPlayerDialog = props => {
-    const {player, handler, open} = props
+    const {player, handler, open, loading} = props
+
     return (
-        <Dialog onClose={props.handler} aria-labelledby="customized-dialog-title" open={open}>
+        <Dialog onClose={handler} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handler}>
-                Modal title
+                The first player is:
             </DialogTitle>
-            <DialogContent dividers>
-                <Typography variant={"h5"} gutterBottom>
-                    {player}
-                </Typography>
+            <DialogContent>
+                <Grid container justify={"center"}>
+                    {loading ? <CircularProgress color="secondary"/> : <h3>{player}</h3>}
+                </Grid>
             </DialogContent>
-            <DialogActions>
-                <Button autoFocus onClick={handler} color="primary">
-                    Save changes
-                </Button>
-            </DialogActions>
         </Dialog>
     )
 }

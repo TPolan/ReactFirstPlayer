@@ -4,7 +4,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 const PlayerCard = props => {
     return (
-        <Card key={props.index}>
+        <Card key={props.index} >
             <Grid container direction={"row-reverse"}>
                 <Grid item>
                     <CardContent>
@@ -23,3 +23,4 @@ const PlayerCard = props => {
     )
 }
 export default PlayerCard;
+

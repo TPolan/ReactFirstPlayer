@@ -10,11 +10,10 @@ const PlayerPool = props => {
     const mappedPlayersArr = playersArr.map(
         (player, index) => {
             return (
-                <Grid item>
+                <Grid item key={index}>
                     <PlayerCard
                         name={player}
                         remove={handleRemovePlayer}
-                        key={index}
                         index={index}
                     />
                 </Grid>

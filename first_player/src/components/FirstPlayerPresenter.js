@@ -4,23 +4,39 @@ import {PlayerContext} from "../context/AddPlayerContext";
 import FirstPlayerDialog from "./FirstPlayerDialog";
 
 const FirstPlayerPresenter = props => {
-
-    const [dialogOpen,setDialogOpen] = useState(false);
-    const handleDialogClick = () => setDialogOpen(!dialogOpen)
     const {playersArr} = useContext(PlayerContext);
-    const chooseRandomindex = max => Math.floor(Math.random() * Math.floor(playersArr.length));
-    let firstPlayer = null;
+    const [firstPlayer, setFirstPlayer] = useState('')
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const chooseRandomIndex = () => Math.floor(Math.random() * playersArr.length);
+    const showSpinner = () => {
+        if (dialogOpen) {
+            setLoading(!loading);
+        }
+        setTimeout(() => {
+            setLoading(!loading);
+        }, 1500);
+    }
+    const handleDialog = () => {
+        showSpinner();
+        setDialogOpen(!dialogOpen);
+    }
 
     const handleChoosePlayer = () => {
-        firstPlayer = (playersArr.find((_, index) => index === chooseRandomindex),
-        handleDialogClick()
-        );
+        setFirstPlayer(playersArr[chooseRandomIndex()]);
+        handleDialog();
     }
 
     return (
         <Container>
             <Button onClick={handleChoosePlayer}>Choose the first Player</Button>
-            {firstPlayer ? <FirstPlayerDialog player={firstPlayer} open={dialogOpen} handler={handleDialogClick}/> : null}
+            <FirstPlayerDialog
+                player={firstPlayer}
+                open={dialogOpen}
+                loading={loading}
+                show={showSpinner}
+                handler={handleDialog}
+            />
         </Container>
 
     )

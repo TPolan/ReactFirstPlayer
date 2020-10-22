@@ -13,7 +13,7 @@ const AddPlayerContextProvider = props => {
     const handleAddPlayer = () => {
         const updatedArr = [...playersArr, playerInput];
         setPlayersArr(updatedArr);
-        axios.post('https://reactfirstplayer.firebaseio.com/players', updatedArr)
+        axios.post('/players.json', updatedArr)
             .then(response => {console.log(response)})
             .catch(error => {console.log(error)});
     };

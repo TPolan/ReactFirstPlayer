@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="45502ef0-e610-4b3a-a5b8-abfc46be7c8f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/AddPlayerContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AddPlayerContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,8 @@
       <workItem from="1602850980190" duration="3140000" />
       <workItem from="1603009991351" duration="1125000" />
       <workItem from="1603012125327" duration="11735000" />
-      <workItem from="1603029143802" duration="26339000" />
+      <workItem from="1603029143802" duration="26968000" />
+      <workItem from="1603359673227" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="add context, PlayerCard.js, PlayerPool.js">
       <created>1603031609649</created>
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603114123070</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding firebase">
+      <created>1603119271369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603119271369</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +181,8 @@
     <MESSAGE value="editing visuals" />
     <MESSAGE value="add spinner" />
     <MESSAGE value="visual fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="visual fixes" />
+    <MESSAGE value="adding firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="676" y="349" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1603035756432">
@@ -184,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603021771123" />
-    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603114122476">
+    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603119270774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603114122476" />
+    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603119270774" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1603114107057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,10 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603036774647" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603114128015">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603119278274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603114128015" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603119278274" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603044731904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

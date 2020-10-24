@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import axios from 'axios';
 
 const PlayerContext = React.createContext();
 
@@ -13,9 +12,6 @@ const AddPlayerContextProvider = props => {
     const handleAddPlayer = () => {
         const updatedArr = [...playersArr, playerInput];
         setPlayersArr(updatedArr);
-        axios.post('/players.json', updatedArr)
-            .then(response => {console.log(response)})
-            .catch(error => {console.log(error)});
     };
     const handleRemovePlayer = key => {
         setPlayersArr((prevState => {

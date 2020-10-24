@@ -5,6 +5,7 @@ import {Grid, Typography} from '@material-ui/core';
 import PlayerPool from './components/PlayerPool';
 import AddPlayerForm from "./components/AddPlayerForm";
 import FirstPlayerPresenter from "./components/FirstPlayerPresenter";
+import TeamsPresenter from "./components/TeamsPresenter";
 
 function App() {
     return (
@@ -16,7 +17,16 @@ function App() {
                     </Typography>
                     <AddPlayerForm/>
                     <PlayerPool/>
-                    <FirstPlayerPresenter/>
+                    <Grid container justify={"center"}>
+                        <Grid item>
+                        <FirstPlayerPresenter/>
+                        </Grid>
+                        <Grid item>
+                            <TeamsPresenter/>
+                        </Grid>
+
+
+                    </Grid>
                 </Grid>
             </header>
         </div>

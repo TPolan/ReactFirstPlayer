@@ -2,7 +2,7 @@
   "name": "first_player",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://reactfirstplayer.firebaseio.com/",
+  "proxy": "https://reactfirstplayer.firebaseio.com/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axios": "^0.20.0"
   }
 }

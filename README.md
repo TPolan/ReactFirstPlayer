@@ -1,2 +1,2 @@
 # ReactFirstPlayer
-quick practice page to choose random first player for board games
+simple practice page to choose random first player and teams for board games

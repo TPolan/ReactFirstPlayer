@@ -12,7 +12,7 @@ const TeamsPresenter = props => {
     const [teams, setTeams] = useState([]);
     const teamCount = Math.ceil(playersArr.length / 2);
     const shufflePlayers = (playersArr) => {
-        let players = ['Urban', 'Pepa', 'Nifty', 'Jirka'];
+        let players = [...playersArr];
         console.log(players,'beforeShuffle')
         for (let i = players.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * i);
@@ -38,12 +38,12 @@ const TeamsPresenter = props => {
         setTeams(splitTeams(shufflePlayers(playersArr),teamCount));
         handleDialog();
     }
-    console.log(teams, 'teams')
+    console.log(teams, 'teams');
 
     return (
         <Grid container>
             <SelectInput teamCount={teamCount}/>
-            <Button onClick={handleCreateTeams}>Create Teams</Button>
+            <Button disabled={!(teamCount >= 2)} onClick={handleCreateTeams}>Create Teams</Button>
             <TeamsDialog
                 teams={teams}
                 open={isOpen}

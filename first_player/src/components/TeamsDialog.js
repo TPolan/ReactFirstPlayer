@@ -5,12 +5,15 @@ const TeamsDialog = props => {
 
     const {handler, loading, open, teams} = props;
     console.log(teams, 'props')
-    const teamsMap = teams.map((team, index)=>
-            <Grid item key={index}>
-                <h3>Team #{index+1}</h3>
-                {/*{team.map((player, index)=> <h2 key={index}>{player}</h2>*/}
-                {/*)}*/}
-            </Grid>
+    const teamsMap = teams.map((team, index) =>
+        <Grid
+            item
+            key={index}
+            style={{padding:8}}>
+            <h3>Team #{index + 1}:</h3>
+            {team.map((player, index) => <h4 key={index}>{player}</h4>
+            )}
+        </Grid>
     )
 
     console.log(teamsMap)
@@ -24,7 +27,7 @@ const TeamsDialog = props => {
                 <Grid container justify={"center"}>
                     {
                         loading ? <CircularProgress color="secondary"/> :
-                        {teamsMap}
+                            <>{teamsMap}</>
                     }
                 </Grid>
             </DialogContent>

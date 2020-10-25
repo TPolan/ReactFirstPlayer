@@ -2,7 +2,6 @@ import React, {useContext, useState} from 'react';
 import {Button, Grid} from "@material-ui/core";
 import TeamsDialog from "./TeamsDialog";
 import useDialog from "../hooks/useDialog";
-import FirstPlayerDialog from "./FirstPlayerDialog";
 import {PlayerContext} from "../context/AddPlayerContext";
 import SelectInput from "./SelectInput";
 
@@ -11,17 +10,42 @@ const TeamsPresenter = props => {
     const {playersArr} = useContext(PlayerContext);
     const {isOpen, handleDialog, isLoading} = useDialog();
     const [teams, setTeams] = useState([]);
-    const chooseRandomIndex = () => Math.floor(Math.random() * playersArr.length);
-    const handleCreateTeams = () => {
-
+    const teamCount = Math.ceil(playersArr.length / 2);
+    const shufflePlayers = (playersArr) => {
+        let players = ['Urban', 'Pepa', 'Nifty', 'Jirka'];
+        console.log(players,'beforeShuffle')
+        for (let i = players.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * i);
+            let temp = players[i];
+            players[i] = players[j];
+            players[j] = temp;
+        }
+        console.log(players,'afterShuffle')
+        return players;
     }
+
+    const splitTeams = (namesArr, teamCount) => {
+        let teams = [];
+        while (teamCount > 0) {
+            teams.push(namesArr.splice(0, Math.floor(namesArr.length / teamCount)))
+            teamCount--;
+        }
+        console.log(teams, 'splitTeams')
+        return teams
+    }
+
+    const handleCreateTeams = (playersArr) => {
+        setTeams(splitTeams(shufflePlayers(playersArr),teamCount));
+        handleDialog();
+    }
+    console.log(teams, 'teams')
 
     return (
         <Grid container>
-            <SelectInput teamCount={Math.ceil(playersArr.length/2)}/>
+            <SelectInput teamCount={teamCount}/>
             <Button onClick={handleCreateTeams}>Create Teams</Button>
             <TeamsDialog
-                player={teams}
+                teams={teams}
                 open={isOpen}
                 loading={isLoading}
                 handler={handleDialog}
@@ -31,3 +55,4 @@ const TeamsPresenter = props => {
 }
 
 export default TeamsPresenter;
+

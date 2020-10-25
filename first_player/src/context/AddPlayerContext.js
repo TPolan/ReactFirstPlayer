@@ -7,7 +7,7 @@ const AddPlayerContextProvider = props => {
     const [playersArr, setPlayersArr] = useState(['Urban', 'Pepa', 'Nifty', 'Jirka']);
     const [playerInput, setPlayerInput] = useState('');
     const handleChange = (event) => {
-        setPlayerInput(event.target.value)
+        setPlayerInput(event.target.value);
     };
     const handleAddPlayer = () => {
         const updatedArr = [...playersArr, playerInput];
@@ -17,7 +17,7 @@ const AddPlayerContextProvider = props => {
         setPlayersArr((prevState => {
             const prevArr = [...prevState];
             const updatedArr = prevArr.filter((_, index) => index !== key);
-            return [...updatedArr]
+            return [...updatedArr];
         }))
     }
 

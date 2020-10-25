@@ -4,6 +4,16 @@ import {CircularProgress, Dialog, DialogContent, DialogTitle, Grid} from "@mater
 const TeamsDialog = props => {
 
     const {handler, loading, open, teams} = props;
+    console.log(teams, 'props')
+    const teamsMap = teams.map((team, index)=>
+            <Grid item key={index}>
+                <h3>Team #{index+1}</h3>
+                {/*{team.map((player, index)=> <h2 key={index}>{player}</h2>*/}
+                {/*)}*/}
+            </Grid>
+    )
+
+    console.log(teamsMap)
 
     return (
         <Dialog onClose={handler} aria-labelledby="customized-dialog-title" open={open}>
@@ -14,7 +24,7 @@ const TeamsDialog = props => {
                 <Grid container justify={"center"}>
                     {
                         loading ? <CircularProgress color="secondary"/> :
-                        {teams}
+                        {teamsMap}
                     }
                 </Grid>
             </DialogContent>

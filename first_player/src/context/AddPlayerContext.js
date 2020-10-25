@@ -4,7 +4,7 @@ const PlayerContext = React.createContext();
 
 const AddPlayerContextProvider = props => {
 
-    const [playersArr, setPlayersArr] = useState(['Urban', 'Pepa', 'Nifty', 'Jirka']);
+    const [playersArr, setPlayersArr] = useState([]);
     const [playerInput, setPlayerInput] = useState('');
     const handleChange = (event) => {
         setPlayerInput(event.target.value);

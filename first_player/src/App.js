@@ -11,13 +11,17 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Grid>
+                <Grid style={{
+                    borderWidth: 2,
+                    borderStyle: "solid",
+                    borderColor: "blue"
+                }}>
                     <Typography variant={'h2'} color={'primary'}>
-                        Choose a first random player
+                        PLAYER RANDOMIZER
                     </Typography>
                     <AddPlayerForm/>
                     <PlayerPool/>
-                    <Grid container justify={"center"}>
+                    <Grid container justify={"center"} style={{padding:10}}>
                         <Grid item>
                         <FirstPlayerPresenter/>
                         </Grid>

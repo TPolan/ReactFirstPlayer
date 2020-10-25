@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="45502ef0-e610-4b3a-a5b8-abfc46be7c8f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TeamsDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamsDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FirstPlayerPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstPlayerPresenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TeamsPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamsPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AddPlayerContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AddPlayerContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <workItem from="1603012125327" duration="11735000" />
       <workItem from="1603029143802" duration="26968000" />
       <workItem from="1603359673227" duration="6857000" />
-      <workItem from="1603445525923" duration="29986000" />
+      <workItem from="1603445525923" duration="32560000" />
     </task>
     <task id="LOCAL-00001" summary="add context, PlayerCard.js, PlayerPool.js">
       <created>1603031609649</created>
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603628378537</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add disable button check">
+      <created>1603630017016</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603630017016</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +214,8 @@
     <MESSAGE value="adding firebase - fixed cors" />
     <MESSAGE value="add create teams button" />
     <MESSAGE value="add teams dialog, randomizing logic, mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="add teams dialog, randomizing logic, mapping" />
+    <MESSAGE value="add disable button check" />
+    <option name="LAST_COMMIT_MESSAGE" value="add disable button check" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1603623587205">
@@ -220,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603467579490" />
-    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603628377927">
+    <state x="517" y="88" key="CommitChangelistDialog2" timestamp="1603630016432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603628377927" />
+    <state x="517" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603630016432" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1603114107057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

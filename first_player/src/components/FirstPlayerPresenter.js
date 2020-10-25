@@ -17,7 +17,7 @@ const FirstPlayerPresenter = props => {
 
     return (
         <Container>
-            <Button onClick={handleChoosePlayer}>Choose the first Player</Button>
+            <Button outlinedPrimary onClick={handleChoosePlayer}>Choose the first Player</Button>
             <FirstPlayerDialog
                 player={firstPlayer}
                 open={isOpen}
